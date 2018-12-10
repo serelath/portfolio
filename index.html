@@ -9,16 +9,23 @@
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="stylesheet/style.css">
     
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
     
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- jQuery LIBRARY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- SCRIPT-->
+    <script src="js/javascript.js"></script>
+    
 </head>
 <body>
+<div class="container">
 <!--HEADER-->
-   <header class="container mx-auto text-center mt-5 pt-3">
+   <header class="mx-auto text-center mt-5 pt-3">
        <figure>
            <a href="index.html"><img id="logo" src="images/logo.png" alt="LOGO"></a>
        </figure>
@@ -28,9 +35,9 @@
     <nav class="navbar navbar-default mt-4">
       <div class="container">
         <ul class="nav mx-auto">
-          <li class="active text-right"><a href="#">MY WORK</a></li>
-          <li class="mx-4 text-center no-select"><a>|</a></li>
-          <li class="text-left"><a href="#">PROFILE</a></li>
+          <li class="active text-right p-1"><a href="#">MY WORK</a></li>
+          <li class="mx-4 text-center no-select p-1"><a>|</a></li>
+          <li class="text-left p-1"><a href="#">PROFILE</a></li>
         </ul>
       </div>
     </nav>
@@ -40,8 +47,51 @@
        <h1 class="mb-0">
            <span>H</span><span>I</span> <span>I</span><span>'</span><span>M</span> <span class="red"><span>A</span><span>L</span><span>I</span><span>C</span><span>E</span></span>
        </h1>
-       <h2 class="">WEB DEVELOPER</h2>
+       <h2 class="">WEB DEVELOPER + DESIGNER</h2>
    </div>
-    
+   
+<!--MY WORK-->
+    <div id="my-work" class="row mt-5 pt-3 text-center px-1">
+       <a href="https://serelath.github.io/witch-pantry/" target="_blank">
+            <div id="witch-pantry" class="my-work mr-sm-3 mr-2">
+                <div class="diamond"></div>
+               <div class="work-text">
+                    <h3 class="work-title mb-0">WITCH PANTRY</h3>
+                    <h3 class="work-type">HALLOWEEN</h3>
+                </div>
+                <div class="visit-site">
+                   <p class="visit">VISIT</p>
+                   <p class="mb-2">SITE</p>
+               </div>
+            </div>
+        </a>
+        <a href="https://serelath.github.io/now/" target="_blank">
+            <div id="now" class="my-work mx-sm-3 mx-2">
+                <div class="diamond"></div>
+               <div class="work-text">
+                    <h3 class="work-title mb-0">NOW</h3>
+                    <h3 class="work-type">ECO-FRIENDLY</h3>
+               </div>
+               <div class="visit-site">
+                   <p class="visit">VISIT</p>
+                   <p class="mb-2">SITE</p>
+               </div>
+            </div>
+        </a>
+        <a href="https://serelath.github.io/ramen-corner/" target="_blank">
+            <div id="ramen-corner" class="my-work ml-sm-3 ml-2">
+                <div class="diamond"></div>
+               <div class="work-text">
+                    <h3 class="work-title mb-0">RAMEN CORNER</h3>
+                    <h3 class="work-type">EATERY</h3>
+               </div>
+               <div class="visit-site">
+                   <p class="visit">VISIT</p>
+                   <p class="mb-2">SITE</p>
+               </div>
+            </div>
+        </a>
+    </div>
+</div>    
 </body>
 </html>
