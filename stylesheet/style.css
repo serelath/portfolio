@@ -5,6 +5,7 @@
 }
 body {
     background-color: #f7f7f7 !important;
+    overflow-x: hidden;
 }
 .no-select {
     user-select: none;
@@ -149,7 +150,12 @@ p {
     font-weight: 300 !important;
     position: relative;
     transition: 0.4s;
-    right: 6px;
+    right: 8px;
+    width: 100px;
+}
+.browse-more a {
+    display: inline-block;
+    transform: translateX(-100%);
 }
 .arrow {
     border-top: 6px solid transparent;
@@ -158,12 +164,12 @@ p {
     width: 10px;
     position: absolute;
     right: 3px;
-    top: 7px;
+    top: 3px;
     border-radius: 3px;
     transition: 0.4s;
 }
 .browse-more:hover .arrow, .browse-more:hover p{
-    right: -5px;
+    right: -3px;
 }
 
     /*BACKGROUND IMAGE*/
