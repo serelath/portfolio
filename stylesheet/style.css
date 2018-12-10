@@ -81,6 +81,7 @@ h3 {
 }
 .my-work:hover .diamond {
     transform: rotate(0deg) scale(0.5) !important;
+    border-radius: 50%;
 }
 .my-work:hover .work-text {
     opacity: 0;
