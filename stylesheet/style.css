@@ -163,13 +163,13 @@ p {
     border-left: 6px solid #383a69;
     width: 10px;
     position: absolute;
-    right: 3px;
+    right: 0px;
     top: 3px;
     border-radius: 3px;
     transition: 0.4s;
 }
 .browse-more:hover .arrow, .browse-more:hover p{
-    right: -3px;
+    right: -5px;
 }
 
     /*BACKGROUND IMAGE*/
