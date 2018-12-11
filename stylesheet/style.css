@@ -14,7 +14,7 @@ body {
 /*TEXT*/
 /*==========================*/
 a {
-    transition: 0.2s;
+    transition: 0.4s;
     text-decoration: none !important;
 }
 h1, h2, h3, h4, p {
@@ -49,6 +49,7 @@ p {
 /*ANIMATION*/
 /*==========================*/
 
+
 /*LOGO*/
 /*==========================*/
 #logo {
@@ -70,10 +71,19 @@ p {
     color: #b7b7b7;
 }
 .nav li a:hover {
-    color: #dd6d7a !important;
+    color: #383a69 !important;
 }
 .active a {
     color: #43467a !important;
+}
+#divider {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #a7a7a7;
+    left: 50%;
+    top: 43%;
+    transform: rotate(-45deg);
 }
 
 /*MY WORK*/
