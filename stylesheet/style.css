@@ -10,6 +10,9 @@ body {
 .no-select {
     user-select: none;
 }
+.container {
+    width: 525px !important;
+}
 
 /*TEXT*/
 /*==========================*/
@@ -21,7 +24,7 @@ h1, h2, h3, h4, p {
     color: #383a69 !important;
 } 
 h1 {
-    font-size: 32px !important;
+    font-size: 36px !important;
     font-weight: 400 !important;
     letter-spacing: 0.5px;
 }
@@ -49,6 +52,22 @@ p {
 /*ANIMATION*/
 /*==========================*/
 
+/*SCROLLBAR*/
+/*==========================*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dd6d7a; 
+}
 
 /*LOGO*/
 /*==========================*/
@@ -56,22 +75,33 @@ p {
     width: 75px;
 }
 
+/* MAIN HEADER */
+/*==========================*/
+#intro h3 {
+    margin-right: 25px;
+}
+
 /*NAVBAR*/
 /*==========================*/
 .nav {
     float: none;
+    display: block !important;
 }
 .nav li {
     font-weight: 300 !important;
     color: #b7b7b7 !important;
     letter-spacing: 2px;
     font-size: 17px;
+    margin-bottom: -12px;
 }
 .nav li a {
     color: #b7b7b7;
+    position: relative;
+    left: 0;
 }
 .nav li a:hover {
     color: #383a69 !important;
+    left: 5px;
 }
 .active a {
     color: #43467a !important;
@@ -82,14 +112,15 @@ p {
     height: 7px;
     background-color: #a7a7a7;
     left: 50%;
-    top: 43%;
+    top: 30%;
     transform: rotate(-45deg);
+    display: none;
 }
 
 /*MY WORK*/
 /*==========================*/
 #my-work {
-    justify-content: center;
+    justify-content: space-between;
 }
 .my-work {
     display: inline-flex;
@@ -160,8 +191,8 @@ p {
     font-weight: 300 !important;
     position: relative;
     transition: 0.4s;
-    right: 8px;
-    width: 100px;
+    right: -20px;
+    width: 105px;
 }
 .browse-more a {
     display: inline-block;
@@ -173,13 +204,13 @@ p {
     border-left: 6px solid #383a69;
     width: 10px;
     position: absolute;
-    right: 0px;
+    right: -30px;
     top: 3px;
     border-radius: 3px;
     transition: 0.4s;
 }
 .browse-more:hover .arrow, .browse-more:hover p{
-    right: -5px;
+    right: -35px;
 }
 
     /*BACKGROUND IMAGE*/
@@ -193,3 +224,30 @@ p {
     #ramen-corner {
         background: center / cover url('../images/ramen-corner.png');
     }
+
+/* MEDIA QUERY */
+/*==========================*/
+
+/* MEDIUM */
+/*==========================*/
+@media (max-width: 576px) {
+    .container {
+        width: 97vw !important;
+    }
+    #my-work {
+        justify-content: center;
+    }
+    #divider {
+        display: block;
+    }
+    .nav {
+    display: flex !important;
+    }
+    .nav li {
+        margin-bottom: 0;
+    }
+    .nav li a:hover {
+        color: #383a69 !important;
+        left: 0;
+    }
+}
