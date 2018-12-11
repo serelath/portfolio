@@ -77,6 +77,9 @@ p {
 
 /* MAIN HEADER */
 /*==========================*/
+#intro {
+    margin-top: 20px !important; 
+}
 #intro h3 {
     margin-right: 25px;
 }
@@ -107,13 +110,6 @@ p {
     color: #43467a !important;
 }
 #divider {
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    background-color: #a7a7a7;
-    left: 50%;
-    top: 30%;
-    transform: rotate(-45deg);
     display: none;
 }
 
@@ -232,6 +228,7 @@ p {
 /*==========================*/
 @media (max-width: 576px) {
     .container {
+        max-width: 510px;
         width: 97vw !important;
     }
     #my-work {
