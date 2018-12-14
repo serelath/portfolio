@@ -7,9 +7,6 @@ body {
     background-color: #f7f7f7 !important;
     overflow-x: hidden;
 }
-.no-select {
-    user-select: none;
-}
 .container {
     width: 525px !important;
 }
@@ -53,8 +50,79 @@ p {
     font-weight: 600 !important;
 }
 
-/*ANIMATION*/
+/*LOAD ANIMATION*/
 /*==========================*/
+#load-bg {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F7F7F7;
+    position: fixed;
+    z-index: 2;
+}
+#purple-bg {
+    height: 100vh;
+    width: 100vw;
+    background-color: #DD6D7A;
+    position: absolute;
+    z-index: 1;
+}
+#load-diamond, #load-lines, #load-lines div {
+    position: absolute;
+}
+#load-diamond {
+    bottom: 75px;
+    left: 50%;
+    transform: rotate(45deg);
+    width: 100px;
+    height: 100px;
+    background-color: #DD6D7A;
+    border-radius: 10px;
+    animation: openDiamond 5s forwards;
+    animation-delay: 0.5s;
+}
+
+    /*KEYFRAMES*/
+@keyframes loadBg {
+    0% {left: 0}
+    100% {left: -105%}
+}
+@keyframes loadBgTwo {
+    0% {right: 0}
+    100% {right: -105%}
+}
+@keyframes openDiamond {
+    0% {bottom: 0;}
+    50% {bottom: 50%; transform: rotate(45deg)}
+    100% {bottom: 50%; transform: rotate(45deg) scale(0.6)}
+    
+}
+
+/*COMFORT LEVEL KEYFRAMES*/
+@keyframes progressStartOne {
+    0% {width: 15px}
+    100% {width:25%}
+}
+@keyframes progressStartTwo {
+    0% {width: 15px}
+    100% {width:75%}
+}
+@keyframes progressStartThree {
+    0% {width: 15px}
+    100% {width:15%;}
+}
+@keyframes progressStartFour {
+    0% {width: 15px}
+    100% {width:30%}
+}
+@keyframes skillGoal {
+    0% {right: 80%}
+    100% {right: 0}
+}
+@keyframes skillGoalText {
+    0% {right: 175%;}
+    100% {right: 0;}
+}
+
 
 /*SCROLLBAR*/
 /*==========================*/
@@ -281,6 +349,7 @@ br {
     border-radius: 20px;
     height: 12px;
     background-color: #dd6d7a;
+    transition: 1s;
 }
 .red-lines.one {
     width: 65px;
@@ -306,20 +375,21 @@ br {
     height: 15px !important;
     border-radius: 20px !important;
     margin: 15px 0;
+    width: 15px;
 }
     .progress:first-child {
         margin: 2px 0 15px 0;
-        width: 60px;
+        animation: progressStartOne 1s forwards cubic-bezier(0.23, 0.5, 0.5, 1);
     }
     .progress:nth-child(2) {
-        width: 170px;
+        animation: progressStartTwo 1.5s forwards cubic-bezier(0.23, 0.5, 0.5, 1);
     }
     .progress:nth-child(3) {
-        width: 35px;
+        animation: progressStartThree 1s forwards cubic-bezier(0.23, 0.5, 0.5, 1);
     }
     .progress:nth-child(4) {
-        width: 70px;
         margin: 15px 0 0 0;
+        animation: progressStartFour 1s forwards cubic-bezier(0.23, 0.5, 0.5, 1);
     }
 
 #skill-goal {
@@ -330,6 +400,13 @@ br {
 #skill-goal h4 {
     letter-spacing: 1.5px !important; 
     font-weight: 300 !important;
+    position: relative;
+}
+#skill-goal h4:first-child {
+    animation: skillGoalText 3.25s forwards cubic-bezier(0.23, 0.8, 0.5, 1);
+}
+#skill-goal h4:nth-child(2) {
+    animation: skillGoalText 2.75s forwards cubic-bezier(0.23, 0.8, 0.5, 1);
 }
 .bar {
     height: 100%;
@@ -337,6 +414,8 @@ br {
     position: absolute;
     right: 0;
     top: 0;
+    animation: skillGoal 2.5s forwards cubic-bezier(0.23, 0.8, 0.5, 1);
+    z-index: -1;
 }
 #comfort-level h2 {
     letter-spacing: 2px !important;
