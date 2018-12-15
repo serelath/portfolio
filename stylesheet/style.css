@@ -53,7 +53,7 @@ p {
 /*KEYFRAMES*/
 
 @keyframes introText {
-    0% {right: -45px;
+    0% {right: -40px;
     }
     100% {0px; right: 0;
     transform: skewX(0deg);}
@@ -116,9 +116,8 @@ p {
 }
 span.alice {
     position: relative;
-    right: -45px;
-
-    animation: introText 2s forwards cubic-bezier(0.23, 1, 0.5, 1);
+    right: -40px;
+    animation: introText 2.25s forwards cubic-bezier(0.23, 1, 0.5, 1);
     display: inline-block;
 }
 span.alice:nth-child(2) {
