@@ -276,6 +276,9 @@ span.alice:nth-child(5) {
     #ramen-corner {
         background: center / cover url('../images/ramen-corner.png');
     }
+    #land-of-sheep {
+        background: center / cover url('../images/land-of-sheep.png');
+    }
 
 /*PROFILE*/
 /*==========================*/
