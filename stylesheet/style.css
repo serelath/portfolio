@@ -385,7 +385,7 @@ br {
     position: relative;
 }
 #skill-goal h4:first-child {
-    animation: skillGoalText 2.75s forwards cubic-bezier(0.23, 0.8, 0.5, 1);
+    animation: skillGoalText 2.6s forwards cubic-bezier(0.23, 0.8, 0.5, 1);
 }
 #skill-goal h4:nth-child(2) {
     animation: skillGoalText 2.25s forwards cubic-bezier(0.23, 0.8, 0.5, 1);
