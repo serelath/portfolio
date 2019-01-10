@@ -90,23 +90,6 @@ p {
 main {
     position: relative;
 }
-#contact-line {
-    position: absolute;
-    right: -50px;
-    top: 67%;
-}
-#line {
-    height: 100px;
-    width: 1px;
-    background-color: #aaaaaa;
-}
-#line-two {
-    height: 100px;
-    width: 1px;
-    background-color: #aaaaaa;
-    position: relative;
-    top: -265px;
-}
 #contact-line p {
     transform: rotate(90deg);
     position: absolute;
