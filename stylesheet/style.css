@@ -296,6 +296,9 @@ span.alice:nth-child(5) {
     #red-slyme {
         background: center / cover url('../images/red-slyme.png');
     }
+    #maryrose {
+        background: center / cover url('../images/maryrose.png');
+    }
 
 /*PROFILE*/
 /*==========================*/
