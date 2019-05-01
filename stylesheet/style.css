@@ -58,6 +58,14 @@ p {
     100% {0px; right: 0;
     transform: skewX(0deg);}
 }
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.35;
+    }
+}
 
 /*COMFORT LEVEL KEYFRAMES*/
 @keyframes progressStartOne {
@@ -384,12 +392,11 @@ br {
     transition: 0.3s;
     overflow: visible;
 }
+/*
 .progress:hover {
     background-color: #383a69 !important;
 }
-.progress:hover::after {
-    opacity: 1;
-}
+*/
 .progress::after {
     position: absolute;
     transform: translate(-50%, -2px);
@@ -399,6 +406,8 @@ br {
     color: #383a69;
     transition: 0.3s;
     opacity: 0;
+    animation: show 1s forwards;
+    animation-delay: 1s;
 }
     .progress:first-child {
         margin: 2px 0 15px 0;
