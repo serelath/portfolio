@@ -307,6 +307,9 @@ span.alice:nth-child(5) {
     #maryrose {
         background: center / cover url('../images/maryrose.png');
     }
+#lebloop {
+    background: center / cover url('../images/lebloop.jpg');
+}
 
 /*PROFILE*/
 /*==========================*/
