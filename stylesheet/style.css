@@ -32,7 +32,7 @@ h2 {
 }
 h3 {
     font-size: 18px !important;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     font-weight: 300 !important;
 }
 h4 {
@@ -332,7 +332,7 @@ br {
 }
 #contact h4 {
     color: white !important;
-    letter-spacing: 1.5px !important;
+    letter-spacing: 0.5px !important;
 }
 #contact a {
     color: white !important;
@@ -343,7 +343,7 @@ br {
 .outter-square {
     position: absolute;
     top: 30%;
-    right: 20%;
+    right: 10%;
     transform: rotate(45deg) translateY(-50%);
     border-radius: 10px;
     width: 95px;
@@ -359,7 +359,7 @@ br {
     height: 50px;
     border-radius: 50%;
     top: 15%;
-    right: 18.5%;
+    right: 9.5%;
 }
 .red-lines {
     border-radius: 20px;
@@ -369,12 +369,12 @@ br {
 }
 .red-lines.one {
     width: 65px;
-    right: 4.5%;
+    right: -5.5%;
     top: 25%;
 }
 .red-lines.two {
     width: 45px;
-    right: 14.5%;
+    right: 4.5%;
     top: 48%;
 }
 
@@ -501,5 +501,10 @@ br {
     }
     br {
         display: none;
+    }
+    
+    /*CONTACT*/
+    #contact h4 {
+        letter-spacing: 0px !important;
     }
 }
