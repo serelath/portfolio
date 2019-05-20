@@ -197,6 +197,7 @@ span.alice:nth-child(5) {
     height: 290px;
     border-radius: 10px;
     position: relative;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
 }
 .my-work:hover .diamond {
     transform: rotate(0deg) scale(0.57) !important;
@@ -329,6 +330,7 @@ br {
     position: relative;
     border: 5px solid #383a69;
     margin-top: 50px;
+    box-shadow: 3px 3px 1px rgba(0,0,0, 0.1);
 }
 #contact h4 {
     color: white !important;
