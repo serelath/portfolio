@@ -308,6 +308,9 @@ span.alice:nth-child(5) {
     #maryrose {
         background: center / cover url('../images/maryrose.png');
     }
+    #tea-la-crea {
+        background: center / cover url('../images/tea-la-crea.jpg');
+    }
 #lebloop {
     background: center / cover url('../images/lebloop.jpg');
 }
