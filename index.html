@@ -17,6 +17,9 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
+	<!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/05ab1ea8b2.js"></script>
+    
     <!-- jQuery LIBRARY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
@@ -35,12 +38,18 @@
    </header>
    
 <!--NAVBAR-->
-    <nav class="navbar navbar-default pt-sm-5 pt-0 mt-sm-4 mt-3 col-sm-10 col-12">
-      <div class="container mt-sm-4 mt-0">
+    <nav class="navbar navbar-default pt-sm-5 pt-0 mt-sm-0 mt-3 col-sm-10 col-12">
+      <div class="container mt-sm-3 mt-0">
         <ul class="nav ml-sm-5 mx-auto pl-sm-2 pl-0">
-          <li class="active text-sm-left text-right mr-3 p-1"><a class="p-m-0 p-2" href="#">MY WORK</a></li>
-          <li id="divider" class="p-1">|</li>
-          <li class="text-left ml-sm-0 ml-3 p-1"><a class="p-m-0 p-2" href="profile.html">PROFILE</a></li>
+          <li class="active text-sm-left text-right mr-3 p-1 d-sm-block d-inline"><a class="p-m-0 p-2" href="#">MY WORK</a></li>
+          <li id="divider" class="p-1 d-sm-none d-inline">|</li>
+          <li class="text-left ml-sm-0 ml-3 p-1 d-sm-block d-inline"><a class="p-m-0 p-2" href="profile.html">PROFILE</a></li>
+          <div class="social text-sm-left text-center">
+	          <a class="ml-2 p-1" target="_blank" href="https://github.com/serelath"><i class="fab fa-github"></i></a> 
+	          <a class="p-1" target="_blank" href="https://www.linkedin.com/in/alice-hoh-b2b026188/"><i class="fab fa-linkedin"></i></a>
+	          <a class="p-1" target="_blank" href="https://www.instagram.com/serelath.designs/"><i class="fab fa-instagram"></i></a>
+          </div>
+        
         </ul>
       </div>
     </nav>
@@ -49,7 +58,7 @@
 <main>
    <div id="intro" class="container text-sm-left text-center mt-sm-5">
       <div>
-       <h1 class="mb-0">
+       <h1 class="mb-0 mt-4">
            HI I'M <span class="red"><span class="alice">A</span><span class="alice">L</span><span class="alice">I</span><span class="alice">C</span><span class="alice">E</span></span>
        </h1>
        </div>
@@ -59,7 +68,7 @@
 <!--MY WORK-->
     <div id="my-work" class="row mt-sm-5 mt-4 pt- text-center px-1">
         <a class="mr-sm-3 ml-sm-0 ml-3 mr-2" href="https://serelath.github.io/tea-la-crea/" target="_blank">
-            <div id="tea-la-crea" class="my-work">
+            <div id="tea-la-crea" class="my-work mb-3">
                 <div class="diamond"></div>
                <div class="work-text">
                     <h4 class="work-title mb-0">TEA LA CREA</h4>
@@ -87,7 +96,7 @@
         </a>
         
         <a class="ml-sm-3 ml-3 mr-sm-0 mr-2" href="https://serelath.github.io/song-playlist/" target="_blank">
-            <div id="lebloop" class="my-work">
+            <div id="lebloop" class="my-work mb-3">
                 <div class="diamond"></div>
                <div class="work-text">
                     <h4 class="work-title mb-0">SONG PLAYLIST</h4>
@@ -100,7 +109,7 @@
             </div>
         </a>
         <a class="my-sm-3 mr-sm-3 mr-2 ml-sm-0 ml-2" href="http://maryrosecmendoza.com/" target="_blank">
-            <div id="maryrose" class="my-work">
+            <div id="maryrose" class="my-work mb-3">
                 <div class="diamond"></div>
                <div class="work-text">
                     <h4 class="work-title mb-0">MARYROSE ART</h4>
@@ -126,7 +135,7 @@
             </div>
         </a>
         <a class="my-sm-3 ml-sm-3 ml-2" href="https://serelath.github.io/ramen-corner-old/" target="_blank">
-            <div id="ramen-corner" class="my-work">
+            <div id="ramen-corner" class="my-work mb-3">
                 <div class="diamond"></div>
                <div class="work-text">
                     <h4 class="work-title mb-0">RAMEN CORNER</h4>
@@ -139,15 +148,8 @@
             </div>
         </a>
     </div>
-    
-    <!--BROWSE MORE-->
-        <div class="browse-more position-relative text-right col-sm-12 col-11 mx-auto mt-sm-0 mt-3 pt-1 mb-5">
-             <a href="https://github.com/serelath" target="_blank" class="position-absolute">
-                <div class="arrow m-1"></div>
-               <p class="text-left m-1">BROWSE MORE</p>
-            </a>
-        </div>
 </main>
+<footer class="text-right pt-sm-0 pt-3 mb-0"><p>&copy; Alice Hoh</p></footer>
 </div>    
 </body>
 </html>
